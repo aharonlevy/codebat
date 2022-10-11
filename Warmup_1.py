@@ -56,3 +56,20 @@ def makes10(num_a, num_b):
     Given 2 ints, a and b, return True if one if them is 10 or if their sum is 10.
     '''
     return num_a==10 or num_b==10 or num_a+num_b==10
+
+def near_hundred(num):
+    '''
+    Given an int num, return True if it is within 10 of 100 or 200.
+     Note: abs(num) computes the absolute value of a number.
+    '''
+    return abs(num-100)<=10 or abs(num-200)<=10
+
+def pos_neg(a, b, negative):
+    '''
+    Given 2 int values, return True if one is negative and one is positive.
+    Except if the parameter "negative" is True, then return True only if both are negative.
+    '''
+    if negative:
+        return a<0 and b<0
+    else:
+        return (a<0 and b>0) or (a>0 and b<0)
