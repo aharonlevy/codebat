@@ -1,8 +1,4 @@
 
-
-from operator import le
-
-
 def sleep_in(weekday, vacation):
     '''
     the function determane if we should sleep in or not.
