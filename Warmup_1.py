@@ -73,3 +73,12 @@ def pos_neg(a, b, negative):
         return a<0 and b<0
     else:
         return (a<0 and b>0) or (a>0 and b<0)
+
+def not_string(str):
+    '''
+    Given a string, return a new string 
+    where "not " has been added to the front.
+    However, if the string already begins with "not",
+    return the string unchanged.
+    '''
+    
