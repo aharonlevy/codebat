@@ -1,5 +1,8 @@
 
 
+from operator import le
+
+
 def sleep_in(weekday, vacation):
     '''
     the function determane if we should sleep in or not.
@@ -85,4 +88,34 @@ def not_string(sentence):
     if sentence[0: len(mask_check)]==mask_check:
         return sentence
     return mask_check + " " + sentence
-    
+
+def missing_char(word, num):
+    '''
+    Given a non-empty word and an int num, return a new
+    string where the char at index n has been removed.
+      The value of n will be a valid index of a char in
+    the original string (i.e. n will be in the range 0..len(str)-1 inclusive).
+    '''
+    first_part= word[:num]
+    second_part= word[num+1:]
+    return first_part+second_part
+
+def front_back(word):
+    '''
+    Given a string, return a new string where the first and last chars have been exchanged.
+    '''
+    if len(word)==1:
+        return word
+    first=word[0]
+    last= word[len(word)-1]
+    return last + word[1:len(word)-1]+first
+
+def front3(word):
+    '''    
+Given a string, we'll say that the front is the first 3
+ chars of the string. If the string length is less than 3,
+the front is whatever is there. Return a new string which is 3 copies of the front.
+'''
+    if len(word)<=3:
+        return word*3
+    return word[0:3]*3
