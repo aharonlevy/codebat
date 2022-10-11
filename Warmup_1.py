@@ -74,11 +74,15 @@ def pos_neg(a, b, negative):
     else:
         return (a<0 and b>0) or (a>0 and b<0)
 
-def not_string(str):
+def not_string(sentence):
     '''
     Given a string, return a new string 
     where "not " has been added to the front.
     However, if the string already begins with "not",
     return the string unchanged.
     '''
+    mask_check="not"
+    if sentence[0: len(mask_check)]==mask_check:
+        return sentence
+    return mask_check + " " + sentence
     
