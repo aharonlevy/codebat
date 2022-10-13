@@ -73,3 +73,13 @@ def array_front9(nums):
             return True
         index_pointer += 1
     return False
+
+def array123(nums):
+    '''
+    Given an array of ints, return True if the sequence of numbers 1, 2, 3 appears in the array somewhere.
+    '''
+    for index_pointer in range(len(nums)-2):
+        if nums[index_pointer]==1 and nums[index_pointer+1]==2 and nums[index_pointer+2]==3:
+            return True
+    return False
+  
