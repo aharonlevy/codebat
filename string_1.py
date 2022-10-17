@@ -40,7 +40,7 @@ def make_out_word(out, word):
 
 def extra_end(string):
     '''
-    Given a string, return a new string made of 3 copies of the last 2 chars of the original string. 
+    Given a string, return a new string made of 3 copies of the last 2 chars of the original string.
     The string length will be at least 2.
     '''
     return string[-2:]*3
