@@ -1,3 +1,6 @@
+'''
+this is the solutions for 'warmup-2' entry of codebat.com
+'''
 
 def string_times(words, num):
     ''''
@@ -83,3 +86,17 @@ def array123(nums):
             return True
     return False
   
+def string_match(a, b):
+    '''
+    Given 2 strings, a and b, return the number of the positions
+    where they contain the same length 2 substring.
+    So "xxcaazz" and "xxbaaz" yields 3,
+     since the "xx", "aa", and "az" substrings appear in the same place in both strings.
+    '''
+    match_counter = 0
+    string_pointer = 0
+    while string_pointer < len(a)-1 and string_pointer < len(b)-1:
+        if a[string_pointer:string_pointer+2]== b[string_pointer:string_pointer+2]:
+            match_counter += 1
+        string_pointer += 1
+    return match_counter
