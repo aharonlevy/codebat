@@ -81,13 +81,13 @@ def combo_string(string_a, string_b):
     #string_b is shorter
     return string_b + string_a + string_b
 
-def non_start(a, b):
+def non_start(string_a, string_b):
     '''
     Given 2 strings, return their concatenation, except omit the first char of each.
     The strings will be at least length 1.
     exemple: non_start('Hello', 'There') → 'ellohere'
     '''
-    return a[1:] + b[1:]
+    return string_a[1:] + string_b[1:]
 
 def left2(string):
     '''
