@@ -80,3 +80,21 @@ def combo_string(string_a, string_b):
         return string_a + string_b + string_a
     #string_b is shorter
     return string_b + string_a + string_b
+
+def non_start(a, b):
+    '''
+    Given 2 strings, return their concatenation, except omit the first char of each.
+    The strings will be at least length 1.
+    exemple: non_start('Hello', 'There') → 'ellohere'
+    '''
+    return a[1:] + b[1:]
+
+def left2(string):
+    '''
+    Given a string, return a "rotated left 2" version where the first 2 chars are moved to the end.
+    The string length will be at least 2.
+    '''
+    origen_front= string[0:2]
+    if len(string) == 2:        #a two letter string will return the original string
+        return string
+    return string[2:] + origen_front
