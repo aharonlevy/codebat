@@ -1,3 +1,6 @@
+'''
+this is the solutions for 'warmup-2' entry of codebat.com
+'''
 
 def sleep_in(weekday, vacation):
     '''
